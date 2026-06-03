@@ -1,2 +1,19 @@
-# Blood-bank-management-system
-Developed a Blood Bank Management System to streamline the management of blood donors, blood inventory, recipient requests, and blood distribution processes. The system enables efficient tracking of blood availability, donor records, blood group categorization, and request fulfillment, reducing manual effort and improving operational efficiency.
+# Blood Bank Management System
+
+## Description
+A database-driven system for managing blood donors, blood inventory, and requests.
+
+## Features
+- Donor Management
+- Blood Inventory Tracking
+- Request Management
+- SQL Database Operations
+
+## Technologies Used
+- Java
+- MySQL
+- HTML
+- CSS
+
+## Author
+Sankarashan M
