@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood Bank | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+  header {
+  background-color: #c62828;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+    .hero {
+      background: linear-gradient(to right, #c62828, #e53935);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      border-radius: 0 0 40px 40px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: white;
+      color: #c62828;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ffebee;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .feature-box {
+      background: #fff3f3;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+
+    .feature-box h3 {
+      color: #c62828;
+      margin-bottom: 0.5rem;
+    }
+
+    .emoji {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blood Bank</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="donate.html">Donate</a>
+      <a href="search.html">Search</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2><span class="emoji">🩸</span> Give Blood, Save Lives</h2>
+    <p>Join our mission to ensure no one dies for lack of blood. Every drop counts.</p>
+    <a href="donate.html"><button class="cta-button">Become a Donor</button></a>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <div class="emoji">🧑‍⚕️</div>
+      <h3>Trusted Donors</h3>
+      <p>We verify every donor for safety and reliability.</p>
+    </div>
+    <div class="feature-box">
+      <div class="emoji">📍</div>
+      <h3>Nearby Help</h3>
+      <p>Find donors close to your location instantly.</p>
+    </div>
+    <div class="feature-box">
+      <div class="emoji">📅</div>
+      <h3>Blood Camps</h3>
+      <p>Join our regular donation drives and help communities in need.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Blood Bank. All rights reserved.</p>
+  </footer>
+</body>
+</html>

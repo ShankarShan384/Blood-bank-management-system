@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Donate Blood</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    header {
+  background-color: #c62828;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+    .donate-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: #fff3f3;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .donate-container h2 {
+      text-align: center;
+      color: #c62828;
+      margin-bottom: 1.5rem;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 0.4rem;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      display: block;
+      margin: 1.5rem auto 0;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a62020;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Donate Blood</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="donate.html">Donate</a>
+      <a href="search.html">Search</a>
+    </nav>
+  </header>
+
+  <section class="donate-container">
+    <h2>🩸 Become a Lifesaver</h2>
+    <form id="donorForm">
+      <label for="name">👤 Full Name:
+        <input type="text" id="name" name="name" required />
+      </label>
+
+      <label for="blood">🧬 Blood Group:
+        <select id="blood" name="blood" required>
+          <option value="">--Select--</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </label>
+
+      <label for="contact">📞 Contact Number:
+        <input type="text" id="contact" name="contact" required />
+      </label>
+
+      <button type="submit">Submit Donation</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Blood Bank</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

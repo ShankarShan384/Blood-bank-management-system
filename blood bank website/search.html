@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search Donors</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+  header {
+  background-color: #c62828;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+    .search-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: #fff3f3;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .search-container h2 {
+      text-align: center;
+      color: #c62828;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      margin-top: 0.4rem;
+    }
+
+    button {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      display: block;
+      margin: 1.5rem auto 0;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a62020;
+    }
+
+    #results {
+      margin-top: 2rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    #results li {
+      background-color: #ffeaea;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Search Donors</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="donate.html">Donate</a>
+      <a href="search.html">Search</a>
+    </nav>
+  </header>
+
+  <section class="search-container">
+    <h2>🔍 Find a Donor</h2>
+    <label for="searchInput">🩸 Enter Blood Group (e.g., A+, B-):</label>
+    <input type="text" id="searchInput" placeholder="e.g., O+" />
+    <button onclick="searchDonors()">Search</button>
+
+    <ul id="results"></ul>
+  </section>
+
+  <footer>
+    <p> 2025 Blood Bank</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
